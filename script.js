@@ -1,4 +1,3 @@
-// Array of items with name and image
 const items = [
     { name: 'GARLIC NAAN', image: "images/pexels-chanwalrus-958545.jpg"},
     { name: 'TANDOORI CHICKEN', image: "images/pexels-enginakyurt-2673353.jpg" },
@@ -12,10 +11,8 @@ const items = [
     { name: 'Milkcake', image: "images/h6-gallery-img8.jpg"},
     { name: 'Blueberries pralines', image: "images/h6-gallery-img6.jpg"},
     { name: 'Smoky pudding', image: "images/h6-gallery-img5.jpg"}
-
 ];
 
-// Function to search and display items
 function searchItems() {
     const input = document.getElementById('searchInput').value.toLowerCase();
     const resultsDiv = document.getElementById('results');
@@ -32,11 +29,11 @@ function searchItems() {
         }
     });
 }
+
 function del() {
     document.getElementById("searchInput").value = "";
     document.getElementById("results").innerHTML = "";
 }
-del();
 
-// Initial display of all items
+del();
 searchItems();
